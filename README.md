@@ -1,14 +1,9 @@
-# Welcome to your CDK TypeScript project
+# CDK Multi Deploy Sample
 
-This is a blank project for CDK development with TypeScript.
+AWS CDKにおける複数スタックデプロイの際の並列実行検証用サンプルです。  
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+```bash
+$ cdk deploy --all --concurrency 3
+```
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+詳しい内容はこちらの記事をご覧ください。
